@@ -1,69 +1,74 @@
-body{
+body {
   background-color: #ede7f6;
-  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
-header{
+header {
   width: auto;
   height: 278px;
   background-color: rgb(219, 68, 55);
   color: rgba(255, 255, 255, 1);
 }
 
-footer{
+footer {
   color: rgb(100, 100, 100);
   width: 640px;
   margin: 16px auto;
-  font: 400 12px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font: 400 12px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
   padding: 0 16px;
   text-align: center;
 }
 
 
-.container{
+.container {
   width: 640px;
   margin: -100px auto 48px;
   background: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   word-wrap: break-word;
 
 }
-.form{
-  color: rgba(0,0,0,.87);
+
+.form {
+  color: rgba(0, 0, 0, .87);
   padding: 34px 17px;
 }
-.bar{
+
+.bar {
   background-color: rgb(255, 138, 128);
   color: rgba(0, 0, 0, 1);
   height: 8px;
 }
-.title{
+
+.title {
   box-sizing: border-box;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 135%;
   max-width: 100%;
   min-width: 0%;
   margin-bottom: 22px;
   padding: 0 17px;
 }
-.item{
+
+.item {
   margin: 2px;
   padding: 16px 17px;
 }
 
 
-.checkboxWrap{
+.checkboxWrap {
   margin-top: 8px;
   display: flex;
   padding: .5em .5em .5em 0;
 }
-._0 .checkbox{
+
+._0 .checkbox {
   -webkit-user-select: none;
-  -webkit-transition: border-color .2s cubic-bezier(0.4,0,0.2,1);
-  transition: border-color .2s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: border-color .2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color .2s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-tap-highlight-color: transparent;
-  border: 10px solid rgba(0,0,0,0.54);
+  border: 10px solid rgba(0, 0, 0, 0.54);
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-sizing: content-box;
@@ -83,16 +88,17 @@ footer{
 
 
 }
-._0 .checkbox.ischecked:not(.isDisabled){
+
+._0 .checkbox.ischecked:not(.isDisabled) {
   border-color: rgb(219, 68, 55);
 }
 
 
 
-._0 .checkboxInk{
+._0 .checkboxInk {
   transform: scale(2.5);
   transition: opacity .15s ease;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 100%;
   height: 20px;
   left: -10px;
@@ -104,42 +110,45 @@ footer{
   width: 20px;
   z-index: -1;
 }
-._0 .isActive .checkboxInk{
+
+._0 .isActive .checkboxInk {
   animation: quantumWizRadialInkSpread .3s;
   animation-fill-mode: forwards;
   opacity: 1;
 }
-._0 .ischecked .checkboxInk{
+
+._0 .ischecked .checkboxInk {
   background-color: rgba(219, 68, 55, 0.15);
 }
 
-._0 .checkboxInnerBox{
-  webkit-transition: all .1s .15s cubic-bezier(0.4,0,0.2,1);
-  transition: all .1s .15s cubic-bezier(0.4,0,0.2,1);
-  -webkit-transition-property: transform,border-radius;
-  transition-property: transform,border-radius;
+._0 .checkboxInnerBox {
+  webkit-transition: all .1s .15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all .1s .15s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: transform, border-radius;
+  transition-property: transform, border-radius;
   border: 8px solid white;
   left: -8px;
   position: absolute;
   top: -8px;
 }
-._0 .areaChecked .checkboxInnerBox{
+
+._0 .areaChecked .checkboxInnerBox {
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: -webkit-transform .1s cubic-bezier(0.4,0,0.2,1);
-  transition: -webkit-transform .1s cubic-bezier(0.4,0,0.2,1);
-  -webkit-transition: transform .1s cubic-bezier(0.4,0,0.2,1);
-  transition: transform .1s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: -webkit-transform .1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform .1s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: transform .1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform .1s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
 
 
-._0 .markContainer{
+._0 .markContainer {
   /*-webkit-animation: quantumWizPaperAnimateCheckMarkOut .2s forwards;
   animation: quantumWizPaperAnimateCheckMarkOut .2s forwards;*/
   transition: clip .2s;
-  clip: rect(0,0,20px,20px);
+  clip: rect(0, 0, 20px, 20px);
   height: 20px;
   left: -10px;
   position: absolute;
@@ -147,55 +156,57 @@ footer{
   width: 20px;
 
 }
-._0 .checkboxWrap .markContainer{
+
+._0 .checkboxWrap .markContainer {
   will-change: transform;
 }
-._0 .areaChecked .markContainer{
+
+._0 .areaChecked .markContainer {
   /*-webkit-animation: quantumWizPaperAnimateCheckMarkIn .2s .1s forwards;
   animation: quantumWizPaperAnimateCheckMarkIn .2s .1s forwards;*/
-  clip: rect(0,20px,20px,0);
+  clip: rect(0, 20px, 20px, 0);
   transition: clip .2s .1s;
 }
-._0 .mark{
+
+._0 .mark {
   /*background: #ff0;*/
   height: 100%;
   pointer-events: none;
   position: absolute;
   width: 100%;
 }
-._0 .ischecked .mark{
+
+._0 .ischecked .mark {
   left: 10px;
   transform: rotate(-45deg);
   transform-origin: 0;
   top: 7px;
 }
-._0 .short{
+
+._0 .short {
   border: 1px solid #fff;
   height: 5px;
   left: 0;
   position: absolute;
 }
-._0 .long{
+
+._0 .long {
   border: 1px solid #fff;
   left: 0;
   position: absolute;
   top: 5px;
 }
-._0 .ischecked .long{
+
+._0 .ischecked .long {
   width: 11px;
 }
 
-
-
-
-
-
-.slow .checkbox{
+.slow .checkbox {
   -webkit-user-select: none;
-  -webkit-transition: border-color .2s cubic-bezier(0.4,0,0.2,1);
-  transition: border-color 2s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: border-color .2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 2s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-tap-highlight-color: transparent;
-  border: 10px solid rgba(0,0,0,0.54);
+  border: 10px solid rgba(0, 0, 0, 0.54);
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-sizing: content-box;
@@ -215,16 +226,17 @@ footer{
 
 
 }
-.slow .checkbox.ischecked:not(.isDisabled){
+
+.slow .checkbox.ischecked:not(.isDisabled) {
   border-color: rgb(219, 68, 55);
 }
 
 
 
-.slow .checkboxInk{
+.slow .checkboxInk {
   transform: scale(2.5);
   transition: opacity 1.5s ease;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 100%;
   height: 20px;
   left: -10px;
@@ -236,42 +248,45 @@ footer{
   width: 20px;
   z-index: -1;
 }
-.slow .isActive .checkboxInk{
+
+.slow .isActive .checkboxInk {
   animation: quantumWizRadialInkSpread .3s;
   animation-fill-mode: forwards;
   opacity: 1;
 }
-.slow .ischecked .checkboxInk{
+
+.slow .ischecked .checkboxInk {
   background-color: rgba(219, 68, 55, 0.15);
 }
 
-.slow .checkboxInnerBox{
-  webkit-transition: all 1s 1.5s cubic-bezier(0.4,0,0.2,1);
-  transition: all 1.s 1.5s cubic-bezier(0.4,0,0.2,1);
-  -webkit-transition-property: transform,border-radius;
-  transition-property: transform,border-radius;
+.slow .checkboxInnerBox {
+  webkit-transition: all 1s 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1.s 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: transform, border-radius;
+  transition-property: transform, border-radius;
   border: 8px solid white;
   left: -8px;
   position: absolute;
   top: -8px;
 }
-.slow .areaChecked .checkboxInnerBox{
+
+.slow .areaChecked .checkboxInnerBox {
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
-  transition: -webkit-transform 1s cubic-bezier(0.4,0,0.2,1);
-  -webkit-transition: transform 1s cubic-bezier(0.4,0,0.2,1);
-  transition: transform 1s cubic-bezier(0.4,0,0.2,1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
 
 
-.slow .markContainer{
+.slow .markContainer {
   /*-webkit-animation: quantumWizPaperAnimateCheckMarkOut .2s forwards;
   animation: quantumWizPaperAnimateCheckMarkOut .2s forwards;*/
   transition: clip 2s;
-  clip: rect(0,0,20px,20px);
+  clip: rect(0, 0, 20px, 20px);
   height: 20px;
   left: -10px;
   position: absolute;
@@ -279,72 +294,52 @@ footer{
   width: 20px;
 
 }
-.slow .checkboxWrap .markContainer{
+
+.slow .checkboxWrap .markContainer {
   will-change: transform;
 }
-.slow .areaChecked .markContainer{
+
+.slow .areaChecked .markContainer {
   /*-webkit-animation: quantumWizPaperAnimateCheckMarkIn .2s .1s forwards;
   animation: quantumWizPaperAnimateCheckMarkIn .2s .1s forwards;*/
-  clip: rect(0,20px,20px,0);
+  clip: rect(0, 20px, 20px, 0);
   transition: clip 2s 1s;
 }
-.slow .mark{
+
+.slow .mark {
   /*background: #ff0;*/
   height: 100%;
   pointer-events: none;
   position: absolute;
   width: 100%;
 }
-.slow .ischecked .mark{
+
+.slow .ischecked .mark {
   left: 10px;
   transform: rotate(-45deg);
   transform-origin: 0;
   top: 7px;
 }
-.slow .short{
+
+.slow .short {
   border: 1px solid #fff;
   height: 5px;
   left: 0;
   position: absolute;
 }
-.slow .long{
+
+.slow .long {
   border: 1px solid #fff;
   left: 0;
   position: absolute;
   top: 5px;
 }
-.slow .ischecked .long{
+
+.slow .ischecked .long {
   width: 11px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.label{
+.label {
   display: flex;
   -webkit-box-orient: vertical;
   box-orient: vertical;
@@ -356,4 +351,42 @@ footer{
   flex-grow: 1;
   margin-left: .75em;
   min-width: 0%;
+}
+
+ul {
+  width: 100%;
+  margin: 0;
+  margin-top: 200px;
+  padding: 0 3%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+ul li {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+ul li+li {
+  margin-top: 100px;
+}
+
+ul li img {
+  width: 100%;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px / 2);
+  width: 100px;
+  height: 0;
+  border-top: 1px solid #4b4b4b;
 }
