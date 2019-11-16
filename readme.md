@@ -1,6 +1,6 @@
 # go○leのサービスでよく見るcheckboxのモノマネ
 
-[demo](https://adunyan.github.io/googleCheckboxImitation/)
+[demo](https://adzunyan.github.io/googleCheckboxImitation/)
 
 ### figure
-![その1](https://github.com/adunyan/googleCheckboxImitation/blob/master/resources/f8.png)
+![その1](https://github.com/adzunyan/googleCheckboxImitation/blob/master/resources/f8.png)
